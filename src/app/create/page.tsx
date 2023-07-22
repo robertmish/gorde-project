@@ -57,7 +57,7 @@ function page() {
     <div className="edu_section">
 
         <div className="edu_wrapper">
-        <div className="edu_header">Easiest way to reach out to the best talent</div>
+        <div className="edu_header">Easiest way to reach out to the best tech talent, globally.</div>
         <div className="edu_bullets">
 
 
