@@ -22,6 +22,8 @@ const mouseLeave = () => {
 <div className="listing_feed">
 
   <div className="job_listing" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+    
+    <div className="mobile_wrapper">
     <div className="comp_logo">
     <div className="time_ago">• 4 hours ago</div>
 
@@ -39,6 +41,8 @@ const mouseLeave = () => {
   <div className="job_position">Back-End Developer <span className='featured'>Featured</span></div>
   <div className="job_type">Remote • $5,000 - $7,000 / month</div>
 </div>
+</div>
+
 
 <div className="job_skills">
   <div className="skill_name">SQL</div>
@@ -53,6 +57,7 @@ const mouseLeave = () => {
   </div>
 
   <div className="job_listing" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+  <div className="mobile_wrapper">
     <div className="comp_logo">
     <div className="time_ago">• 6 hours ago</div>
 
@@ -70,7 +75,7 @@ const mouseLeave = () => {
   <div className="job_position">Front-End JavaScript Developer</div>
   <div className="job_type">Remote • $3,000 - $3,500 / month</div>
 </div>
-
+</div>
 <div className="job_skills">
   <div className="skill_name">React</div>
   <div className="skill_name">TailwinCSS</div>
@@ -86,6 +91,7 @@ const mouseLeave = () => {
 
 
   <div className="job_listing" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+  <div className="mobile_wrapper">
     <div className="comp_logo">
     <div className="time_ago">• 12 hours ago</div>
 
@@ -103,7 +109,7 @@ const mouseLeave = () => {
   <div className="job_position">Senior Android Developer</div>
   <div className="job_type">Remote • $7,000 - $12,500 / month</div>
 </div>
-
+</div>
 <div className="job_skills">
   <div className="skill_name">Java</div>
   <div className="skill_name">Kotlin</div>

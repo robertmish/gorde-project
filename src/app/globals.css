@@ -173,6 +173,9 @@ margin-top: 50px;
   border-bottom: 1px solid #dedede;
   padding-bottom: 35px;
 }
+.mobile_wrapper {
+  display: none;
+}
 .comp_logo {
   width: 80px;
   height: 80px;
@@ -505,6 +508,9 @@ justify-content: space-between;
     border-bottom: 1px solid #dedede;
     padding-bottom: 35px;
   }
+  .mobile_wrapper {
+    display: flex;
+  }
   .comp_logo {
     margin-left:20px;
     margin-bottom: 20px;
@@ -516,8 +522,8 @@ justify-content: space-between;
     box-shadow: 0px 1px 3px 0px #dedede;
   }
   .listing_info {
-  margin-left: 30px;
-  width: 350px;
+    margin-left: 20px;
+    width: auto;
   }
   .comp_name {
   font-size: 15px;
