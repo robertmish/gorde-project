@@ -474,10 +474,8 @@ justify-content: space-between;
   }
   .listing_filter {
     display: flex;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 111px;
-margin-left:22px;
+    width: 88%;
+    margin: 152px auto 0 22px;
   }
   .filter_label {
   margin-right: 10px;
@@ -495,7 +493,7 @@ margin-left:22px;
   }
   
   .listing_feed {
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 50px;
   }
