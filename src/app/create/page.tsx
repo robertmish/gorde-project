@@ -6,7 +6,7 @@ function page() {
   return (
   <div className="create_wrapper">
     <div className="form_section">
-    <Link href="/"><div className="logo ml-32 mt-5">RemoteNomads</div></Link>
+    <Link href="/"><div className="logo ml-24 mt-8">RemoteNomads</div></Link>
         <div className="form_wrapper">
         <div className="form_header">Let's get started</div>
 
