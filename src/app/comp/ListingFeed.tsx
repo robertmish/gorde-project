@@ -1,11 +1,23 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
-import { useState } from 'react';
+import { useState } from 'react'
+import axios from 'axios'
+import { toast } from 'react-hot-toast'
+// import { getAds } from '../../../src/lib/mongo/mongoads'
+
+// async function fetchAds() {
+//   const { ads } = await getAds()
+//   if (!ads) throw new Error('Failed to fetch ads')
+
+//   return ads
+// }
 
 function ListingFeed() {
-
+  // const ads = await fetchAds()
+  const [data, setData] = useState([]);
   const [hovered, setHovered] = useState(false);
-
+ 
 const mouseEnter = () => {
 setHovered(true);
 
@@ -17,9 +29,40 @@ const mouseLeave = () => {
   }
 
 
+//   const getUserId = async () => {
+//     try {
+//           //Get user id
+//     const res = await axios.get('/api/users/getAds')
+//     console.log(res.data);
+//     setData(res.data)
+//     } catch (error:any) {
+//         toast.error(error.message);
+//     }
+// }
+    
+// const displayAds = async () => {
+//   try {
+   
+//   const res = await axios.get('/api/users/getAds')
+//   console.log(res.data);
+//   setData(res.data)
+//   console.log(data);
+// } catch (error:any) {
+//   toast.error(error.message);
+// }
+// };
+
+
+
   return (
 
 <div className="listing_feed">
+
+{/* <ul>
+  {ads.map((ad: any): React.JSX.Element => (
+    <li key={ad._id}>Company:{ad.companyName} Sallary: {ad.sallary}</li>
+  ))}
+</ul> */}
 
   <div className="job_listing" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
     
@@ -119,6 +162,8 @@ const mouseLeave = () => {
 
 {hovered ? <button className='apply_job_btn'>Apply</button>: null}
   </div>
+
+
 
 </div>
   )

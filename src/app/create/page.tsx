@@ -34,6 +34,7 @@ function page() {
             const response = await axios.post("/api/users/publishAd", ad);
             console.log("Publish success", response.data);
             setPublished(true);
+            router.push("/success");
             
         } catch (error:any) {
             console.log("Publish failed", error.message);
