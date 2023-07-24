@@ -4,8 +4,10 @@ import {useRouter} from "next/navigation";
 import Header from './comp/Header';
 import Footer from './comp/Footer';
 import ListingFeed from './comp/ListingFeed';
+import { useState } from 'react';
 
-export default function Home() {
+
+export default async function Home() {
 
 const router = useRouter();
 
