@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { toast } from 'react-hot-toast'
 import {useRouter} from "next/navigation";
+import Link from 'next/link'
 
 // const data = await getAds()
 // console.log(data);
@@ -14,7 +15,18 @@ export default function ListingFeed() {
 
   const [published, setPublished] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([
+    {
+      _id: '_idnumber',
+      companyName: 'The Company Name',
+      jobTitle: 'Job Title',
+      skills: 'skills',
+      sallary: '1,000',
+      adUrl: 'https://example.com',
+      postDateAdded: '',
+
+    }
+  ]);
 
  
   const fetchedAds = async () => {
@@ -85,7 +97,7 @@ fetchedAds()
     
     <div className="mobile_wrapper">
     <div className="comp_logo">
-    <div className="time_ago">• 4 hours ago</div>
+    <div className="time_ago">• 4 hours ago, {ad.postDateAdded}</div>
 
       <Image
               src="/sopro_logo.jpeg"
@@ -108,7 +120,7 @@ fetchedAds()
   <div className="skill_name">{ad.skills}</div>
 </div>
 
-{hovered ? <button className='apply_job_btn'>Apply</button>: null}
+{hovered ? <Link href={ad.adUrl}><button className='apply_job_btn'>Apply</button></Link>: null}
   </div>
 
 ))}
